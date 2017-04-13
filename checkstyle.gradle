@@ -9,6 +9,7 @@ task checkstyle(type: Checkstyle) {
 
     def configProps = ['proj.module.dir': projectDir.absolutePath]
     configProperties configProps
+    toolVersion = '6.7'
     // empty classpath
     classpath = files()
 }
